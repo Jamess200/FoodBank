@@ -1,12 +1,13 @@
+
 import cv2
 import os
 
 # Define Path to Images Folder
 # Ed
-folder_path = r"D:\Food bank\fridgecam"
+# folder_path = r"D:\Food bank\fridgecam"
 
 # James
-# folder_path = r'C:\Users\James Simmill\Desktop\ImageLaps'
+folder_path = r'C:\Users\James Simmill\Desktop\ImageLaps'
 
 # Get Image Files with timestamp
 images = os.listdir(folder_path)
