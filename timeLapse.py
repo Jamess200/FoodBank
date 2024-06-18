@@ -1,8 +1,16 @@
 import cv2
 import os
 
-# Define Path to Images Folder and Get Image Files with timestamp
-folder_path = r'C:\Users\James Simmill\Desktop\ImageLaps'
+# Define Path to Images Folder
+# Ed
+folder_path = r"D:\Food bank\fridgecam"
+
+# James
+# folder_path = r'C:\Users\James Simmill\Desktop\ImageLaps'
+
+# Get Image Files with timestamp
+images = os.listdir(folder_path)
+
 
 # Get list of the image files with their modification timestamps
 images = [
