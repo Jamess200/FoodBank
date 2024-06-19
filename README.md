@@ -15,4 +15,4 @@ ImageLaps Video Creator is a Python script that creates multiple time-lapse vide
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Jamess200/timeLaps.git
+   git clone https://github.com/Jamess200/FoodBank.git
