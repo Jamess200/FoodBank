@@ -1,7 +1,7 @@
 # ImageLaps Video Creator
 
 ## Description
-ImageLaps Video Creator is a Python script that creates multiple time-lapse videos from a series of images. This tool is useful for projects such as documenting construction progress, nature photography, and more. The script processes images from a specified directory, sorts them by modification date, and generates videos based on predefined ranges.
+ImageLaps Video Creator is a Python script that creates multiple time-lapse videos from a series of images. This tool is useful for projects such as documenting movement and progress over time. The script processes images from a specified directory, sorts them by modification date, and generates videos based on specified ranges.
 
 ## Table of Contents
 - [Installation](#installation)
