@@ -1,27 +1,16 @@
 # FoodBank Video Creator
 
+[Check out our YouTube video](https://youtu.be/YQYi-I0GTlc)
+
 ## Description
 FoodBank Video Creator is a Python script that creates multiple time-lapse videos from a series of images. This tool is useful for projects that document movement and progress over time. The script processes images from a specified directory, sorts them by modification date, and generates videos based on specified ranges.
 
 ## Table of Contents
-- [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [Script Details](#script-details)
 - [Created Video Preview](#created-video-preview)
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Jamess200/FoodBank.git
-
-2. Navigate to the project directory:
-   ```bash
-   cd FoodBank
-
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
 
 ## Usage
 To create the time-lapse videos:
@@ -181,4 +170,4 @@ The script performs the following steps to create time-lapse videos from a serie
 
 You can watch an example of the time-lapse video created using this script on YouTube:
 
-[Watch the time-lapse video](PutLinkHere!!!!)
+[Watch the time-lapse video](https://youtu.be/YQYi-I0GTlc)
