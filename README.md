@@ -8,13 +8,20 @@ FoodBank Video Creator is a Python script that creates multiple time-lapse video
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [Script Details](#script-details)
-
+- [Created Video Preview](#created-video-preview)
 
 ## Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/Jamess200/FoodBank.git
 
+2. Navigate to the project directory:
+   ```bash
+   cd FoodBank
+
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
 
 ## Usage
 To create the time-lapse videos:
@@ -28,7 +35,6 @@ To create the time-lapse videos:
      ```python
      # Define Path to Images Folder
      folder_path = r'C:\Users\James\Desktop\FoodBank_Video_Creator'
-     ```
 
 3. **Run the Script**:
    - Open a terminal or command prompt.
@@ -45,13 +51,13 @@ To create the time-lapse videos:
    - The script will process the images and generate time-lapse videos.
    - The output videos will be saved in the same directory as the script, named `timelapse_video_1.avi`, `timelapse_video_2.avi`, etc.
 
-### Configeration
+### Configuration
 
 1. **Place Your Image Files**:
    - Ensure your images are in the correct format (e.g., .jpg) and are located in the directory specified by the `folder_path`.
 
 2. **Update the Script Configuration**:
-   - Open the `timeLaps.py` file in a text editor.
+   - Open the `FoodBank_Video_Creator.py` file in a text editor.
    - Locate the `folder_path` variable and set it to the path where your images are stored:
      ```python
      folder_path = r'C:\Users\James\Desktop\FoodBank_Video_Creator'
@@ -135,39 +141,44 @@ The script performs the following steps to create time-lapse videos from a serie
            continue
 
       # Resize resolution to SD (480x640)
-       desired_width = 480
-     desired_height = 640
-     frame = cv2.resize(frame, (desired_width, desired_height))
+      desired_width = 480
+      desired_height = 640
+      frame = cv2.resize(frame, (desired_width, desired_height))
 
-     height, width, layers = frame.shape
-     print(f"Frame size: {width}x{height}")
+      height, width, layers = frame.shape
+      print(f"Frame size: {width}x{height}")
 
-     # Define the output video file name and parameters
-     video_name = f'timelapse_video_{idx+1}.avi'
-     fps = 15  # Frames per second
-     fourcc = cv2.VideoWriter_fourcc(*'XVID')
-     video = cv2.VideoWriter(video_name, fourcc, fps, (width, height))
+      # Define the output video file name and parameters
+      video_name = f'timelapse_video_{idx+1}.avi'
+      fps = 15  # Frames per second
+      fourcc = cv2.VideoWriter_fourcc(*'XVID')
+      video = cv2.VideoWriter(video_name, fourcc, fps, (width, height))
 
-       if not video.isOpened():
+      if not video.isOpened():
          print(f"Error: VideoWriter not opened for video {video_name}.")
          continue
 
-       # Add each image in the range to the video
-       for image in images[start:end]:
+      # Add each image in the range to the video
+      for image in images[start:end]:
          img_path = os.path.join(folder_path, image)
          frame = cv2.imread(img_path)
          if frame is None:
-               print(f"Error reading image {img_path}")
-             continue
+            print(f"Error reading image {img_path}")
+            continue
 
            # Resize the frame to the desired resolution
          frame = cv2.resize(frame, (desired_width, desired_height))
          video.write(frame)
 
-       # Release the video writer and finalize the video
-     video.release()
-     print(f"Video saved as {video_name}")
+      # Release the video writer and finalize the video
+      video.release()
+      print(f"Video saved as {video_name}")
 
    # Clean up and close any open windows
    cv2.destroyAllWindows()
 
+## Created Video Preview
+
+You can watch an example of the time-lapse video created using this script on YouTube:
+
+[Watch the time-lapse video](PutLinkHere!!!!)
