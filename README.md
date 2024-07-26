@@ -1,9 +1,7 @@
-<div style="text-align: center;">
-  <h1 style="text-decoration: underline;">FoodBank Video Creator</h1>
-</div>
-
-<div style="text-align: center;">
-  <img src="Files/img/Fridge_readme.png" alt="FoodBank Banner" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
+<div align="center">
+  <h1>FoodBank Video Creator</h1>
+  <p>This project helps automate the creation of time-lapse videos for food banks.</p>
+  <p><img src="Files/img/Fridge_readme.png" alt="FoodBank Video Banner" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;"></p>
 </div>
 
 [Check out our YouTube video](https://youtu.be/YQYi-I0GTlc)
