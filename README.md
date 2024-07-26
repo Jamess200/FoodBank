@@ -7,7 +7,6 @@
 </div>
 
 [Check out our YouTube video](https://youtu.be/YQYi-I0GTlc)
-
 ## Description
 FoodBank Video Creator is a Python script that creates multiple time-lapse videos from a series of images. This tool is useful for projects that document movement and progress over time. The script processes images from a specified directory, sorts them by modification date, and generates videos based on specified ranges.
 
