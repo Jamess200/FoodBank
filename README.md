@@ -1,5 +1,7 @@
 # FoodBank Video Creator
 
+![Blog Banner](Files/img/Fridge_readme.png)
+
 [Check out our YouTube video](https://youtu.be/YQYi-I0GTlc)
 
 ## Description
