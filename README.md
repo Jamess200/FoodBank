@@ -1,6 +1,10 @@
-# FoodBank Video Creator
+<div style="text-align: center;">
+  <h1 style="text-decoration: underline;">FoodBank Video Creator</h1>
+</div>
 
-![Blog Banner](Files/img/Fridge_readme.png)
+<div style="text-align: center;">
+  <img src="Files/img/Fridge_readme.png" alt="Blog Banner" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
+</div>
 
 [Check out our YouTube video](https://youtu.be/YQYi-I0GTlc)
 
