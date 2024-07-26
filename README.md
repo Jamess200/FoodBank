@@ -27,13 +27,13 @@ To create the time-lapse videos:
    - Update the `folder_path` variable to point to your image directory. For example:
      ```python
      # Define Path to Images Folder
-     folder_path = r'C:\Users\James\Desktop\FoodBank_Video_Creator'
+     folder_path = r'C:\FoodBank_Video_Creator'
 
 3. **Run the Script**:
    - Open a terminal or command prompt.
    - Navigate to the directory where your script is located:
      ```bash
-     cd path\to\your\script\directory
+     cd C:\FoodBank_Video_Creator # Enter your own Path here
      ```
    - Run the script using Python:
      ```bash
@@ -45,55 +45,25 @@ To create the time-lapse videos:
    - The output videos will be saved in the same directory as the script, named `timelapse_video_1.avi`, `timelapse_video_2.avi`, etc.
 
 ### Configuration
-
-1. **Place Your Image Files**:
-   - Ensure your images are in the correct format (e.g., .jpg) and are located in the directory specified by the `folder_path`.
-
-2. **Update the Script Configuration**:
-   - Open the `FoodBank_Video_Creator.py` file in a text editor.
-   - Locate the `folder_path` variable and set it to the path where your images are stored:
-     ```python
-     folder_path = r'C:\Users\James\Desktop\FoodBank_Video_Creator'
-     ```
-
-3. **Open Terminal or Command Prompt**:
-   - On Windows: Press `Win + R`, type `cmd`, and press Enter.
-   - On macOS: Press `Cmd + Space`, type `Terminal`, and press Enter.
-   - On Linux: Use the application menu to open the Terminal.
-
-4. **Navigate to the Script Directory**:
-   - Use the `cd` command to change the directory to where your script is located. For example:
-     ```bash
-     cd C:\Users\James\Desktop\FoodBank
-     ```
-
-5. **Run the Script**:
-   - Execute the script by typing the following command:
-     ```bash
-     python FoodBank_Video_Creator.py
-     ```
-
-6. **Check the Output**:
-   - After running the script, check the output directory for the generated video files.
-   - The videos will be named `timelapse_video_1.avi`, `timelapse_video_2.avi`, etc.
+ Ensure your images are in the correct format (e.g., .jpg) and are located in the directory specified by the `folder_path`. The `folder_path` variable in the script should be updated to reflect the location of your image files. For example:
+```python
+folder_path = r'C:\FoodBank_Video_Creator'
+```
 
 ## Script Details
-
 The script performs the following steps to create time-lapse videos from a series of images:
 
 1. **Import Required Libraries**:
-   - The script uses the `cv2` library from OpenCV for image processing and the `os` library for interacting with the operating system, such as reading files from a directory.
-
+   - The script uses the `cv2` library from OpenCV for image processing and the `os` library for interacting with the operating system.
    ```python
    import cv2
    import os
 
 2. **Define Path to Images Folder and Get Image Files with Timestamps**:
-   - Set the folder_path variable to the directory where your images are stored.
-   - Get a list of image files along with their modification timestamps.
-
+   - Set the `folder_path` variable to the directory where your images are stored.
+   - Retrieve a list of image files along with their modification timestamps.
    ```python
-   folder_path = r'C:\Users\James\Desktop\FoodBank_Video_Creator'
+   folder_path = r'C:\FoodBank_Video_Creator'
    images = [
       (img, os.path.getmtime(os.path.join(folder_path, img)))
        for img in os.listdir(folder_path)
