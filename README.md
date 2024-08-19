@@ -132,7 +132,7 @@ The script performs the following steps to create time-lapse videos from a serie
          frame = cv2.resize(frame, (desired_width, desired_height))
          video.write(frame)
 
-      # Release the video writer and finalize the video
+      # Release the video writer and finalise the video
       video.release()
       print(f"Video saved as {video_name}")
 
