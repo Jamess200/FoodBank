@@ -23,7 +23,7 @@ if not images:
 # Define the ranges for the three videos
 ranges = [(0, 900), (2500, 3400), (4100, 5000)]
 
-# Loop through each range and create a video
+# Loop through ranges and create a video
 for idx, (start, end) in enumerate(ranges):
     # Define Video Parameters
     frame = cv2.imread(os.path.join(folder_path, images[start]))
