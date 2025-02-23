@@ -25,11 +25,11 @@ to document changes over time.
 ---
 
 ## **Features**
-✔️ **Processes images into a time-lapse video**  
-✔️ **Sorts images by timestamp to ensure correct sequencing**  
-✔️ **User-defined video segments for flexibility**  
-✔️ **Handles missing images gracefully**  
-✔️ **Saves `.avi` videos in a specified output folder**  
+**Processes images into a time-lapse video**  
+**Sorts images by timestamp to ensure correct sequencing**  
+**User-defined video segments for flexibility**  
+**Handles missing images gracefully**  
+**Saves `.avi` videos in a specified output folder**  
 
 ---
 
