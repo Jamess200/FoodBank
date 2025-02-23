@@ -41,7 +41,7 @@ to document changes over time.
 ### **Installation**
 1. **Clone the repository**:  
    ```bash
-   git clone https://github.com/YourUsername/FoodBank-Video-Creator.git
+   git clone https://github.com/Jamess200/FoodBank.git
    cd FoodBank-Video-Creator
 
 2. **Install dependencies**:
