@@ -24,7 +24,7 @@ to document changes over time.
 
 ---
 
-## ** Features**
+## **Features**
 ✔️ **Processes images into a time-lapse video**  
 ✔️ **Sorts images by timestamp to ensure correct sequencing**  
 ✔️ **User-defined video segments for flexibility**  
@@ -33,12 +33,12 @@ to document changes over time.
 
 ---
 
-## ** Installation & Setup**
-### ** Prerequisites**
+## **Installation & Setup**
+### **Prerequisites**
 - Python **3.x**
 - OpenCV (`cv2`)
 
-### ** Installation**
+### **Installation**
 1. **Clone the repository**:  
    ```bash
    git clone https://github.com/YourUsername/FoodBank-Video-Creator.git
