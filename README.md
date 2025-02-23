@@ -8,8 +8,7 @@
 
 ## **Overview**
 The **FoodBank Video Creator** is a Python-based tool designed to **generate time-lapse videos** from a sequence of images.  
-Originally developed as part of a **food sustainability project at Harper Adams University**, this script enables **automated video creation**  
-to document changes over time.
+Originally developed as part of a **food sustainability project at Harper Adams University**, this script enables **automated video creation** to document changes over time.
 
 ---
 
@@ -25,11 +24,11 @@ to document changes over time.
 ---
 
 ## **Features**
-**Processes images into a time-lapse video**  
-**Sorts images by timestamp to ensure correct sequencing**  
-**User-defined video segments for flexibility**  
-**Handles missing images gracefully**  
-**Saves `.avi` videos in a specified output folder**  
+**- Processes images into a time-lapse video**  
+**- Sorts images by timestamp to ensure correct sequencing**  
+**- User-defined video segments for flexibility**  
+**- Handles missing images gracefully**  
+**- Saves `.avi` videos in a specified output folder**  
 
 ---
 
@@ -77,7 +76,7 @@ to document changes over time.
   ```makefile
   C:\Users\YourUsername\Videos\timelapse_video_1.avi
   C:\Users\YourUsername\Videos\timelapse_video_2.avi
--You can customize the save location in the script.
+-You can customise the save location in the script.
 
 ## **How It Works**
 - The script processes images from a specified folder and creates time-lapse videos by following these steps:
