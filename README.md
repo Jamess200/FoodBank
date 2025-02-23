@@ -42,7 +42,7 @@ to document changes over time.
 1. **Clone the repository**:  
    ```bash
    git clone https://github.com/Jamess200/FoodBank.git
-   cd FoodBank-Video-Creator
+   cd FoodBank
 
 2. **Install dependencies**:
    ```bash
