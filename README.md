@@ -1,146 +1,99 @@
 <div align="center">
   <h1>FoodBank Video Creator</h1>
-  <p><img src="Files/img/Fridge_readme.png" alt="FoodBank Video Banner" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;"></p>
+  <p><img src="Files/img/Fridge_readme.png" alt="FoodBank Video Banner" width="200px" height="200px"></p>
+  <a href="https://youtu.be/YQYi-I0GTlc"><b>📺 Watch the Time-Lapse Video</b></a>
 </div>
 
-[Check out our YouTube video](https://youtu.be/YQYi-I0GTlc)
+---
 
-## Description
-FoodBank Video Creator is a Python script that creates multiple time-lapse videos from a series of images. This tool is useful for projects that document movement and progress over time. The script processes images from a specified directory, sorts them by modification date, and generates videos based on specified ranges.
+## **Overview**
+The **FoodBank Video Creator** is a Python-based tool designed to **generate time-lapse videos** from a sequence of images.  
+Originally developed as part of a **food sustainability project at Harper Adams University**, this script enables **automated video creation**  
+to document changes over time.
 
-## Table of Contents
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Script Details](#script-details)
-- [Created Video Preview](#created-video-preview)
+---
 
+## **Table of Contents**
+- [Overview](#-overview)
+- [Features](#-features)
+- [Installation & Setup](#-installation--setup)
+- [Usage](#-usage)
+- [How It Works](#-how-it-works)
+- [Created Video Preview](#-created-video-preview)
+- [License](#-license)
 
-## Usage
-To create the time-lapse videos:
+---
 
-1. **Place Your Image Files**:
-   - Place your image files in a specified directory on your local machine. Ensure that the images are in JPG format.
+## ** Features**
+✔️ **Processes images into a time-lapse video**  
+✔️ **Sorts images by timestamp to ensure correct sequencing**  
+✔️ **User-defined video segments for flexibility**  
+✔️ **Handles missing images gracefully**  
+✔️ **Saves `.avi` videos in a specified output folder**  
 
-2. **Update the Script Configuration**:
-   - Open the script file `FoodBank_Video_Creator.py`.
-   - Update the `folder_path` variable to point to your image directory. For example:
-     ```python
-     # Define Path to Images Folder
-     folder_path = r'C:\FoodBank_Video_Creator'
+---
 
-3. **Run the Script**:
-   - Open a terminal or command prompt.
-   - Navigate to the directory where your script is located:
-     ```bash
-     cd C:\FoodBank_Video_Creator # Enter your own Path here
-     ```
-   - Run the script using Python:
-     ```bash
-     python timeLaps.py
-     ```
+## ** Installation & Setup**
+### ** Prerequisites**
+- Python **3.x**
+- OpenCV (`cv2`)
 
-4. **Output**:
-   - The script will process the images and generate time-lapse videos.
-   - The output videos will be saved in the same directory as the script, named `timelapse_video_1.avi`, `timelapse_video_2.avi`, etc.
+### ** Installation**
+1. **Clone the repository**:  
+   ```bash
+   git clone https://github.com/YourUsername/FoodBank-Video-Creator.git
+   cd FoodBank-Video-Creator
 
-### Configuration
- Ensure your images are in the correct format (e.g., .jpg) and are located in the directory specified by the `folder_path`. The `folder_path` variable in the script should be updated to reflect the location of your image files. For example:
-```python
-folder_path = r'C:\FoodBank_Video_Creator'
-```
+2. **Install dependencies**:
+   ```bash
+   pip install opencv-python
 
-## Script Details
-The script performs the following steps to create time-lapse videos from a series of images:
+3. **Run the script**:
+   ```bash
+   python FoodBank_Video_Creator.py
 
-1. **Import Required Libraries**:
-   - The script uses the `cv2` library from OpenCV for image processing and the `os` library for interacting with the operating system.
-   ```python
-   import cv2
-   import os
+## **Usage**
+### **Step 1: Place Your Image Files**
+- Ensure your **images are in JPG or PNG format**.
+- Store them in a single directory.
 
-2. **Define Path to Images Folder and Get Image Files with Timestamps**:
-   - Set the `folder_path` variable to the directory where your images are stored.
-   - Retrieve a list of image files along with their modification timestamps.
-   ```python
-   folder_path = r'C:\FoodBank_Video_Creator'
-   images = [
-      (img, os.path.getmtime(os.path.join(folder_path, img)))
-       for img in os.listdir(folder_path)
-       if img.endswith(".jpg")
-   ]
+### **Step 2: Run the Script**
+- Open a terminal and execute:
+  ```bash
+  python FoodBank_Video_Creator.py
+- Enter the path to the image folder when prompted.
 
-3. **Sort Images in the Correct Order**:
-   - Sort the images by their modification date to ensure they are processed in the correct order.
+### **Step 3: Enter Video Ranges**
+- The script will prompt you to enter the start and end indices for each video.
+  ```bash
+  0,100
+  100,200
+  200,300
+  done
+- Once entered, the script will process and create time-lapse videos.
 
-   ```python
-   images.sort(key=lambda x: x[1])
-   images = [img[0] for img in images]
+### **Step 4: Locate the Output Videos**
+- Videos are saved in:
+  ```makefile
+  C:\Users\YourUsername\Videos\timelapse_video_1.avi
+  C:\Users\YourUsername\Videos\timelapse_video_2.avi
+-You can customize the save location in the script.
 
-4. **Error Handling if Images Not Found**:
-   - Check if any images were found in the specified directory. If not, print an error message and exit the script.
+## **How It Works**
+- The script processes images from a specified folder and creates time-lapse videos by following these steps:
 
-   ```python
-   if not images:
-    print("No images found in the specified directory.")
-    exit()
+1. **Loads images** from the user-specified folder.
+2. **Sorts images** by modification timestamp to ensure correct sequencing.
+3. **Prompts the user** to enter custom start and end indices for video segments.
+4. **Creates `.avi` time-lapse videos** using OpenCV.
+5. **Resizes frames** to a standard resolution (`480x640`).
+6. **Handles missing or corrupted images** gracefully by skipping them.
+7. **Saves the generated videos** in the specified output directory.
+- By automating this process, the script efficiently converts large sets of images into compressed videos for analysis or presentation.
 
-5. **Define the Ranges for the Videos**:
-   - Specify the ranges of images to be used for creating different videos. Each range is defined by a start and end index.
+## **Created Video Preview**
+Check out an example of the time-lapse video on YouTube:
+[Watch the video](https://youtu.be/YQYi-I0GTlc)
 
-   ```python
-   ranges = [(0, 900), (2500, 3400), (4100, 5000)]
-
-6. **Loop Through Each Range and Create a Video**:
-   - For each range, read and resize the images, then add them to a video file.
-   - Save the video file.
-
-   ```python
-   for idx, (start, end) in enumerate(ranges):
-       # Read the first image in the range to get the dimensions
-      frame = cv2.imread(os.path.join(folder_path, images[start]))
-       if frame is None:
-         print(f"Error reading the first image in range {start}:{end}.")
-           continue
-
-      # Resize resolution to SD (480x640)
-      desired_width = 480
-      desired_height = 640
-      frame = cv2.resize(frame, (desired_width, desired_height))
-
-      height, width, layers = frame.shape
-      print(f"Frame size: {width}x{height}")
-
-      # Define the output video file name and parameters
-      video_name = f'timelapse_video_{idx+1}.avi'
-      fps = 15  # Frames per second
-      fourcc = cv2.VideoWriter_fourcc(*'XVID')
-      video = cv2.VideoWriter(video_name, fourcc, fps, (width, height))
-
-      if not video.isOpened():
-         print(f"Error: VideoWriter not opened for video {video_name}.")
-         continue
-
-      # Add each image in the range to the video
-      for image in images[start:end]:
-         img_path = os.path.join(folder_path, image)
-         frame = cv2.imread(img_path)
-         if frame is None:
-            print(f"Error reading image {img_path}")
-            continue
-
-           # Resize the frame to the desired resolution
-         frame = cv2.resize(frame, (desired_width, desired_height))
-         video.write(frame)
-
-      # Release the video writer and finalise the video
-      video.release()
-      print(f"Video saved as {video_name}")
-
-   # Clean up and close any open windows
-   cv2.destroyAllWindows()
-
-## Created Video Preview
-
-You can watch an example of the time-lapse video created using this script on YouTube:
-
-[Watch the time-lapse video](https://youtu.be/YQYi-I0GTlc)
+## **License**
+This project is licensed under the MIT License – feel free to use and modify!
