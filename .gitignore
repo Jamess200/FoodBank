@@ -1,1 +1,16 @@
-timelapse_video.avi
+# Ignore video output files
+timelapse_video*.avi
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore logs and temp files
+*.log
+*.tmp
