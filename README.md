@@ -14,13 +14,13 @@ to document changes over time.
 ---
 
 ## **Table of Contents**
-- [Overview](#-overview)
-- [Features](#-features)
-- [Installation & Setup](#-installation--setup)
-- [Usage](#-usage)
-- [How It Works](#-how-it-works)
-- [Created Video Preview](#-created-video-preview)
-- [License](#-license)
+- [Overview](#overview)
+- [Features](#features)
+- [Installation & Setup](#installation--setup)
+- [Usage](#usage)
+- [How It Works](#how-it-works)
+- [Created Video Preview](#created-video-preview)
+- [License](#license)
 
 ---
 
