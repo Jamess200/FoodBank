@@ -89,7 +89,6 @@ to document changes over time.
 5. **Resizes frames** to a standard resolution (`480x640`).
 6. **Handles missing or corrupted images** gracefully by skipping them.
 7. **Saves the generated videos** in the specified output directory.
-- By automating this process, the script efficiently converts large sets of images into compressed videos for analysis or presentation.
 
 ## **Created Video Preview**
 Check out an example of the time-lapse video on YouTube:
